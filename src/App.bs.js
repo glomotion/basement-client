@@ -2,6 +2,14 @@
 
 import * as Curry from "bs-platform/lib/es6/curry.js";
 import * as React from "react";
+import * as Css from "@emotion/css";
+import AppModuleCss from "./App.module.css";
+
+var styles = AppModuleCss;
+
+var container = Css.css({
+      color: "#fff"
+    });
 
 var initialState = {
   count: 0
@@ -22,7 +30,12 @@ function reducer(state, action) {
 function App(Props) {
   var match = React.useReducer(reducer, initialState);
   var dispatch = match[1];
-  return React.createElement("main", undefined, "Simple counter with reducer", React.createElement("div", undefined, React.createElement("button", {
+  return React.createElement("main", {
+              className: Css.cx([
+                    container,
+                    styles.moo
+                  ])
+            }, "Simple counter with reducer", React.createElement("div", undefined, React.createElement("button", {
                       onClick: (function (param) {
                           return Curry._1(dispatch, /* Decrement */1);
                         })
@@ -38,9 +51,11 @@ function App(Props) {
 var make = App;
 
 export {
+  styles ,
+  container ,
   initialState ,
   reducer ,
   make ,
   
 }
-/* react Not a pure module */
+/* styles Not a pure module */

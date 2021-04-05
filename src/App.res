@@ -1,3 +1,11 @@
+// @module external styles: {..} = "./App.module.css"
+@module("./App.module.css") external styles: {..} = "default"
+
+let container = Emotion.css({
+  "color": "#fff",
+  // "backgroundColor": "red"
+});
+
 type state = {count: int};
 
 type action =
@@ -16,7 +24,7 @@ let reducer = (state, action) =>
 let make = () => {
   let (state, dispatch) = React.useReducer(reducer, initialState);
 
-  <main>
+  <main className={Emotion.cx([container, styles["moo"]])}>
     {React.string("Simple counter with reducer")}
     <div>
       <button onClick={_ => dispatch(Decrement)}>
