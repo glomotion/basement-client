@@ -13,7 +13,7 @@ module.exports = {
   module: {
     rules: [
       {
-        // Include ts, tsx, js, and jsx files.
+        // Include js, and jsx files.
         test: /\.(js)x?$/,
         exclude: /node_modules/,
         use: ["babel-loader"],
@@ -55,5 +55,10 @@ module.exports = {
       },
     ],
   },
-  plugins: [],
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "src/index.html",
+      inject: false,
+    }),
+  ],
 };
