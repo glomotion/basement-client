@@ -2,12 +2,27 @@
   "name": "basement-client",
   "scripts": {
     "re:build": "bsb -make-world -clean-world",
-    "re:start": "bsb -make-world -clean-world -w"
+    "re:start": "bsb -make-world -clean-world -w",
+    "start": "webpack-cli serve --mode development",
+    "build": "webpack --mode production"
   },
   "devDependencies": {
-    "bs-platform": "^8.3.3"
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.13.13",
+    "@emotion/babel-plugin": "^11.2.0",
+    "@rescript/react": "^0.10.1",
+    "babel-loader": "^8.2.2",
+    "bs-platform": "^9.0.2",
+    "css-loader": "^5.2.0",
+    "postcss": "^8.2.9",
+    "postcss-loader": "^5.2.0",
+    "webpack": "^5.30.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "@rescript/react": "^0.10.1"
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   }
 }
