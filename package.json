@@ -1,8 +1,8 @@
 {
   "name": "basement-client",
   "scripts": {
-    "re:build": "bsb -make-world -clean-world",
-    "re:start": "bsb -make-world -clean-world -w",
+    "re:build": "bsb -make-world",
+    "re:start": "bsb -make-world -w",
     "start": "webpack-cli serve --mode development",
     "build": "webpack --mode production"
   },
@@ -13,7 +13,7 @@
     "@emotion/babel-plugin": "^11.2.0",
     "@rescript/react": "^0.10.1",
     "babel-loader": "^8.2.2",
-    "bs-platform": "^9.0.2",
+    "bs-platform": "^8.3.0",
     "css-loader": "^5.2.0",
     "postcss": "^8.2.9",
     "postcss-loader": "^5.2.0",
