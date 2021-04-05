@@ -1,3 +1,6 @@
-[%bs.raw {|require("./index.css")|}];
+%%raw("import './index.global.css'")
 
-ReactDOM.renderToElementWithId(<App />, "root");
+switch (ReactDOM.querySelector("#root")) {
+| Some(root) => ReactDOM.render(<App />, root)
+| None => ()
+}

@@ -12,7 +12,7 @@ let reducer = (state, action) =>
   | Decrement => {count: state.count - 1}
   };
 
-[@react.component]
+@react.component
 let make = () => {
   let (state, dispatch) = React.useReducer(reducer, initialState);
 

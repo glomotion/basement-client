@@ -5,10 +5,6 @@ B /Users/timpaul/Desktop/GIT-Repos/basement-client/node_modules/bs-platform/lib/
 FLG -w +a-4-9-20-40-41-42-50-61-102
 S /Users/timpaul/Desktop/GIT-Repos/basement-client/node_modules/@rescript/react/lib/ocaml
 B /Users/timpaul/Desktop/GIT-Repos/basement-client/node_modules/@rescript/react/lib/ocaml
-S /Users/timpaul/Desktop/GIT-Repos/basement-client/node_modules/bs-css/lib/ocaml
-B /Users/timpaul/Desktop/GIT-Repos/basement-client/node_modules/bs-css/lib/ocaml
-S /Users/timpaul/Desktop/GIT-Repos/basement-client/node_modules/bs-css-emotion/lib/ocaml
-B /Users/timpaul/Desktop/GIT-Repos/basement-client/node_modules/bs-css-emotion/lib/ocaml
-S src/App
-B lib/bs/src/App
+S src
+B lib/bs/src
 ####BSB GENERATED: NO EDIT}
